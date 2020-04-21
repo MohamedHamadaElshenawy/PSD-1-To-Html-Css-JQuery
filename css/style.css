@@ -1,0 +1,428 @@
+/* Start Global */
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: auto;  
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar,
+.header,
+.services,
+.team,
+.testi,
+.our-projects,
+.footer{
+    min-width: 1200px;
+}
+/* End Global */
+
+/* Start Nav Bar */
+.navbar{
+    font-size: 20px;
+    height: 0;
+    color: white;
+}
+.navbar .brand{
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+}
+.navbar .links{
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+    position: relative;
+    z-index: 3;
+}
+.navbar .links li{
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+.navbar .links li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .links li.active a,
+.navbar .links li a:hover{
+    color: #1ABC9C;
+    cursor: pointer;
+}
+.navbar .links li.active,
+.navbar .links li:hover{
+    color: #1ABC9C;
+    border-bottom: 2px solid #1ABC9C;
+}
+/* End Nav Bar */
+
+/* Start of Header */
+.header{
+    background: url('../images/header.jpg');
+    background-size: cover;
+}
+.header .bx-wrapper{
+    margin-bottom: 0;
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+}
+.header .bx-wrapper .bx-viewport{
+    height: 50% !important;
+    text-align: center;
+    color: white;
+}
+.header .slider{
+    height: 100%;
+}
+.header .slider div{
+    height: 400px;
+}
+.header .slider div h2{
+    font-size: 60px
+}
+.header .slider div h2 span{
+    color: #1ABC9C;
+}
+.header .slider div p{
+    font-size: 18px;
+}
+/* End of Header */
+
+/* Start of Our Services */
+.services{
+    padding: 75px 20px 30px;
+}
+.services h2{
+    margin: 0 0 50px;
+}
+.services .item{
+    float: left;
+    width: 33.3333333%;
+    margin-bottom: 20px;
+}
+.services .item i{
+    color: #1ABC9C;
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+.services .item .info{
+    float: left;
+    width: 75%;
+}
+.services .item .info h3{
+    font-weight: normal;
+    
+}
+.services .item .info P{
+    color: #666;
+}
+/* End of Our Services */
+
+/* Start of Our Team*/
+.team{
+    padding: 60px 20px;
+}
+.team .box{
+    float: left;
+}
+.team .box {
+    width: 14.75%;
+    position: relative;
+    transition: 1s all ease-in-out;
+}
+.team .box img{
+    width: 100%;
+}
+.team .box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 98.5%;
+    background-color: #1ABC9C;
+    color: #FFF;
+    text-align: center;
+    line-height: 181px;
+    font-size: 27px;
+    font-weight: bold;
+    opacity: .9;
+    display: none;
+}
+.team .box:not(:first-child):hover .overlay{
+    display: block;
+}
+.team .box:first-child{
+    width: 30%;
+    margin-right: 5%;
+}
+.team .box:nth-child(2),
+.team .box:nth-child(3),
+.team .box:nth-child(4){
+    margin-right: 2%;
+}
+.team .box h2{
+    margin-top: 0px;
+}
+.team .box p{
+    color: #666;
+    margin-top: 45px;
+    line-height: 1.6;
+}
+/* End of Our Team*/
+
+/* Start of Testimonials */
+.testi{
+    background: url("../images/code-pic.jpg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+}
+.testi .t-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #D0D0D0;
+    background-color: black;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+}
+.testi h2{
+    margin: 40px 0 80px;
+    font-size: 40px;
+}
+.testi q{
+    font-size: 22px;
+    line-height: 1.4;
+}
+.testi p{
+    padding-top: 30px;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #1ABC9C;
+    font-weight: bold;
+}
+.testi .clients-slider > div{
+    display: none;
+}
+.testi .clients-slider .active{
+    display: block;
+}
+/* End of Testimonials */
+
+/* Start of Our Projects */
+.our-projects{
+    padding: 50px 0;
+}
+.our-projects h2{
+    margin-bottom: 40px;
+}
+.our-projects ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.our-projects ul li{
+    float: left;
+    margin-right: 12px;
+    padding: 9px 18px;
+    border: 2px solid #999;
+    color: #999;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px
+}
+.our-projects ul li.selected{
+    color: #FFF;
+    background-color: #1ABC9C;
+    border: 2px solid #1ABC9C;
+}
+.our-projects ul li:hover{
+    color: #FFF;
+    background-color: #1ABC9C;
+    border: 2px solid #1ABC9C;
+    cursor: pointer;
+}
+.our-projects .gallary{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.our-projects .gallary > div{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.our-projects .gallary > div img{
+    width: 100%;
+}
+.our-projects .gallary > div .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 98.5%;
+    background-color: #1ABC9C;
+    color: #FFF;
+    text-align: center;
+    line-height: 221px;
+    font-size: 27px;
+    font-weight: bold;
+    opacity: .85;
+    display: none;
+    cursor: pointer;
+}
+.our-projects .gallary > div .heart{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    display: none;
+}
+.our-projects .gallary > div:hover .overlay,
+.our-projects .gallary > div:hover .heart{
+    display: block;
+}
+/* End of Our Projects */
+
+/* Start of Footer */
+.footer{
+    background-color: #222;
+    color: #FFF;
+    padding: 25px 0;
+}
+.footer .col{
+    float: left;
+    width: 22.75%;
+}
+.footer .col:nth-child(1),
+.footer .col:nth-child(2),
+.footer .col:nth-child(3){
+    margin-right: 3%
+}
+.footer .col .classics{
+    margin-top: 40px;
+    line-height: 1.6;
+    color: #bdb4b4;
+}
+.footer .col .social{
+    display: inline-block;
+    margin-top: 45px;
+}
+.footer .col .social i{
+    padding: 11px 14px;
+    border: 1px solid #bdb4b4;
+    color: #bdb4b4;
+    margin-right: 12px;
+}
+.footer .col .social i:hover{
+    cursor: pointer;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+.footer .col .tags-block{
+    margin-top: 40px;
+}
+.footer .col .tags{
+    display: inline-block;
+    color: #bdb4b4;
+    border: 1px solid #bdb4b4;
+    padding: 14px 18px;
+    margin:  8px 3px;
+}
+.footer .col .tags:hover{
+    cursor: pointer;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+.footer .col div.first{
+    margin-top: 45px;
+}
+.footer .col .second,
+.footer .col .third{
+    margin-top: 10px;
+}
+
+.footer .col .post .post-img,
+.footer .col .post .post-info{
+    float: left;
+}
+.footer .col .post .post-img{
+    width: 35%;
+    margin-right: 5%;
+}
+.footer .col .post .post-img img{
+    width: 100%;
+}
+.footer .col .post .post-info h4{
+    margin: 10px 0px -8px 5px;
+}
+.footer .col .post .post-info p{
+    margin-left: 5px;
+    color: #bdb4b4
+}
+.footer .col .post:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+.footer .col .blogs{
+    margin-top: 25px;
+}
+.footer .col .blogs span{
+    color: #bdb4b4;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #bdb4b4;
+}
+.footer .col .blogs span:hover{
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .1s all ease-in-out;
+}
+.footer .copy{
+    margin-top: 40px;
+    line-height: 1.6;
+    color: #bdb4b4;
+}
+/* End of Footer */
+
+/* Start my framework */
+/* Fixing for floating elements */
+.clearfix{
+    clear: both;
+}
+
+/* Putting line below the headers */
+.special-heading{
+    position: relative;
+}
+.special-heading:after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 2px solid black;
+    top: 30px;
+    left: 0;
+    width: 43px;
+}
+/* End my framework */
