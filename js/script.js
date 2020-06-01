@@ -64,7 +64,7 @@ $(function(){
             $(".gallary > div").each(function(){
             if(!$(this).hasClass(className)){
                 $(this).hide();
-                $(selector).fadeIn();
+                $(selector).fadeIn(500);
                 }
             });
         }
