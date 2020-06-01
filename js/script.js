@@ -65,8 +65,8 @@ $(function(){
             if(!$(this).hasClass(className)){
                 $(this).hide();
                 $(selector).fadeIn();
-            }
-        });
+                }
+            });
         }
     });
     
