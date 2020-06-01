@@ -230,6 +230,7 @@ ul{
 /* Start of Our Projects */
 .our-projects{
     padding: 50px 0;
+    min-height: 750px;
 }
 .our-projects h2{
     margin-bottom: 40px;
