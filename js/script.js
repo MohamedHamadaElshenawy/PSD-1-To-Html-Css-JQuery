@@ -63,9 +63,8 @@ $(function(){
         }else{
             $(".gallary > div").each(function(){
             if(!$(this).hasClass(className)){
-                $(this).fadeOut(500,function(){
-                  $(selector).fadeIn(1000);
-                });
+                $(this).hide();
+                $(selector).fadeIn();
             }
         });
         }
